@@ -31,7 +31,15 @@ async def sitemap():
         media_type="application/xml"
     )
 
-#app.add_middleware(SecurityHeadersMiddleware)
+@app.get("/robots.txt", include_in_schema=False)
+async def robots():
+    return PlainTextResponse(
+        content="User-agent: *\n"
+                "Allow: /\n"
+                "Sitemap: https://getfincalx.com/sitemap.xml",
+    )
+
+app.add_middleware(SecurityHeadersMiddleware)
 app.add_middleware(RateLimitMiddleware, max_requests=100, window_seconds=60)
 app.add_middleware(
     CORSMiddleware,

@@ -35,7 +35,7 @@ async def emi_calculate(request: Request):
 def _context(request: Request, form: dict | None = None) -> dict:
     return {
         "request": request,
-        "title": "EMI Calculator India | Free Loan EMI Calculator",
-        "description": "Free EMI calculator for monthly loan instalment, total interest, and total repayment estimates. Fast, private, and no login required.",
+        "title": "EMI Calculator India 2026 | Loan EMI Calculator Online",
+        "description": "Calculate EMI, interest, and total repayment instantly with our free EMI calculator.",
         "form": form or {"loan_amount": 1000000, "annual_rate": 8.5, "years": 20},
     }
