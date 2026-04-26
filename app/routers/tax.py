@@ -41,7 +41,8 @@ async def tax_calculate(request: Request):
 def _context(request: Request, form: dict | None = None) -> dict:
     return {
         "request": request,
-        "title": "Income Tax Calculator India FY 2025-26 | Old vs New Regime",
-        "description": "Compare income tax under old vs new regime with our free India tax calculator.",
+        "title": "Income Tax Calculator India FY 2025-26 (Updated 2026) | Old vs New Regime",
+        "description": "Free income tax calculator India FY 2025-26: compare old vs new regime, estimate tax liability, cess & take-home salary. Updated for latest slabs.",
+        "last_updated": "April 2026 (FY 2025-26)",
         "form": form or {"gross_income": 1200000, "regime": "new", "deductions": 0},
     }

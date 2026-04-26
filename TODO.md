@@ -1,18 +1,11 @@
-# Validation & UX Improvement TODO
-
-## Plan
-Improve input validation and user experience for the finance calculator website.
+# SEO Optimization TODO
 
 ## Steps
-- [x] 1. Update `app/forms.py` - Add `validate_form_data()` helper
-- [x] 2. Update `app/routers/sip.py` - Manual form parsing + error handling
-- [x] 3. Update `app/routers/emi.py` - Manual form parsing + error handling
-- [x] 4. Update `app/routers/tax.py` - Manual form parsing + error handling
-- [x] 5. Update `app/routers/overlap.py` - Manual form parsing + error handling
-- [x] 6. Update `app/templates/tools/sip.html` - Inline validation feedback
-- [x] 7. Update `app/templates/tools/emi.html` - Inline validation feedback
-- [x] 8. Update `app/templates/tools/tax.html` - Inline validation feedback
-- [x] 9. Update `app/templates/tools/overlap.html` - Inline validation feedback
-- [x] 10. Update `app/static/js/main.js` - Client-side validation
-- [x] 11. Test all calculators
+- [x] Step 1: Update router titles & meta descriptions (sip.py, emi.py, tax.py, overlap.py)
+- [x] Step 2: Update tool_base.html with new blocks (seo_content, faq_schema)
+- [x] Step 3: Rewrite sip.html with full SEO content + FAQ schema
+- [x] Step 4: Rewrite emi.html with full SEO content + FAQ schema
+- [x] Step 5: Rewrite tax.html with full SEO content + FAQ schema
+- [x] Step 6: Rewrite overlap.html with full SEO content + FAQ schema
+- [x] Step 7: Final review & validation
 

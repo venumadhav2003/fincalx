@@ -35,7 +35,7 @@ async def sip_calculate(request: Request):
 def _context(request: Request, form: dict | None = None) -> dict:
     return {
         "request": request,
-        "title": "Best SIP Calculator India 2026 | Mutual Fund SIP Calculator",
-        "description": "Free SIP calculator India to estimate returns, maturity amount, and investment growth. Fast and accurate.",
+        "title": "SIP Calculator India 2026 – Calculate Returns & Investment Growth",
+        "description": "Free SIP calculator India 2026: plan monthly mutual fund investments, estimate maturity amount & compare returns. Private, fast & accurate.",
         "form": form or {"monthly_investment": 5000, "annual_rate": 12, "years": 10},
     }

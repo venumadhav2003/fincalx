@@ -6,6 +6,7 @@
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
     <meta name="robots" content="index, follow">
+    {% if last_modified_iso %}<meta name="last-modified" content="{{ last_modified_iso }}">{% endif %}
     <link rel="canonical" href="{{ request.url }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">

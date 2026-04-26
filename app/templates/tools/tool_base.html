@@ -6,7 +6,8 @@
         <div class="row align-items-center g-4">
             <div class="col-lg-8">
                 <span class="eyebrow">Calculator</span>
-                <h1 class="display-6 fw-bold mt-3 mb-3">{% block tool_title %}{% endblock %}</h1>
+                <h1 class="display-6 fw-bold mt-3 mb-2">{% block tool_title %}{% endblock %}</h1>
+                {% block tool_extra %}{% endblock %}
                 <p class="lead text-secondary mb-0">{% block tool_intro %}{% endblock %}</p>
             </div>
             <div class="col-lg-4">
@@ -36,6 +37,8 @@
         </div>
     </div>
 </section>
+
+{% block seo_content %}{% endblock %}
 
 <section class="section-pad pt-0">
     <div class="container">
@@ -85,12 +88,17 @@
                 <h2 class="h4 fw-bold mb-0">Related FinCalX Tools</h2>
             </div>
             <div class="related-links">
-                <a href="/tools/sip-calculator">SIP Calculator</a>
-                <a href="/tools/emi-calculator">EMI Calculator</a>
-                <a href="/tools/income-tax-calculator">Income Tax Calculator</a>
-                <a href="/tools/portfolio-overlap-checker">Portfolio Overlap Tool</a>
+                <a href="/tools/sip-calculator">SIP Calculator India</a>
+                <a href="/tools/emi-calculator">EMI Calculator India</a>
+                <a href="/tools/income-tax-calculator">Income Tax Calculator India</a>
+                <a href="/tools/portfolio-overlap-checker">Portfolio Overlap Checker</a>
             </div>
         </div>
     </div>
 </section>
 {% endblock %}
+
+{% block head_extra %}
+{% block faq_schema %}{% endblock %}
+{% endblock %}
+

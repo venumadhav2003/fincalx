@@ -36,8 +36,8 @@ async def overlap_calculate(request: Request):
 def _context(request: Request, form: dict | None = None) -> dict:
     return {
         "request": request,
-        "title": "Portfolio Overlap Checker | Mutual Fund Overlap Tool India",
-        "description": "Check portfolio overlap between two funds or stocks instantly.",
+        "title": "Portfolio Overlap Checker – Compare Mutual Fund Holdings",
+        "description": "Free portfolio overlap checker: compare mutual fund holdings & stock portfolios instantly. Reduce duplication, improve diversification & invest smarter.",
         "form": form or {
             "first_portfolio": "Reliance Industries\nTCS\nInfosys",
             "second_portfolio": "TCS\nHDFC Bank\nInfosys",
