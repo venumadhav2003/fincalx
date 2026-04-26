@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import Response
+from fastapi.responses import PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.routers import emi, home, legal, overlap, sip, tax
@@ -19,7 +19,7 @@ app = FastAPI(
 
 @app.get("/sitemap.xml", include_in_schema=False)
 async def sitemap():
-    return Response(
+    return PlainTextResponse(
         content='<?xml version="1.0" encoding="UTF-8"?>'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         '<url><loc>https://getfincalx.com/</loc></url>'
