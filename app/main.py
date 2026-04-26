@@ -19,7 +19,7 @@ app = FastAPI(
 
 @app.get("/sitemap.xml", include_in_schema=False)
 async def sitemap():
-    return PlainTextResponse(
+    #return PlainTextResponse(
         content='<?xml version="1.0" encoding="UTF-8"?>'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         '<url><loc>https://getfincalx.com/</loc></url>'
@@ -29,7 +29,7 @@ async def sitemap():
         '<url><loc>https://getfincalx.com/tools/portfolio-overlap-checker</loc></url>'
         '</urlset>',
         media_type="application/xml"
-    )
+    #)
 
 @app.get("/robots.txt", include_in_schema=False)
 async def robots():
